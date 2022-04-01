@@ -6,7 +6,7 @@ export default function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:7071/api/toons`)
+    fetch(`/api/toons`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(
